@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Score Board</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="score-container">
+            <h3>HOME</h3>
+            <div class="score-box">
+                <p id="home-score-point">0</p>
+            </div>
+            
+            <div class="button-points">
+                <button onclick="addHome1()">+1</button>
+                <button onclick="addHome2()">+2</button>
+                <button onclick="addHome3()">+3</button>
+            </div>
+        </div>
+        
+        <div class="score-container">
+            <h3>GUEST</h3>
+            
+            <div class="score-box">
+                <p id="guest-score-point">0</p>
+            </div>
+
+            <div class="button-points">
+                <button onclick="addGuest1()">+1</button>
+                <button onclick="addGuest2()">+2</button>
+                <button onclick="addGuest3()">+3</button>
+            </div>
+        </div>
+            
+        <div class="newGame-container">
+             <button class="newGame-btn" onclick="newGame()">NEW GAME</button>
+        </div> 
+       
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
